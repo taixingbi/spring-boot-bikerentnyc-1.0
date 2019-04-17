@@ -9,16 +9,16 @@ import java.io.Serializable;
 
 
 @Entity
-@Table(name = "users")
+//@Table(name = "users")
+@Table(name = "bikerentnyc_users")
+
 public class Users {
 
     @Id
-    @GeneratedValue( strategy= GenerationType.AUTO)
     private int id;
     private String email;
     private String first_name;
     private String last_name;
-    private String name;
 
 //    public Users(String first_name, String last_name){
 //        super();

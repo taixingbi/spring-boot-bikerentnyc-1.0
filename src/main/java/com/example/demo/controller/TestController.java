@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 
-public class HelloWorld {
-    @RequestMapping("/user")
+public class TestController {
+    @RequestMapping("/api/test")
     public String index(){
-        return "Hello World";
+        return "This is api test";
     }
 
 }

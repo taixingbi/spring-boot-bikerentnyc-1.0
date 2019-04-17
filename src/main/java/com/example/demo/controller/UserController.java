@@ -27,11 +27,12 @@ public class UserController {
         return userRepository.findById(id);
     }
 
-    @PostMapping("/post")
+    @PostMapping("/users/post")
     public Users addUser( Users post) {
 
         userRepository.save(post);
         return post;
+
     }
 
 }

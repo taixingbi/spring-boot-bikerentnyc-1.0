@@ -23,8 +23,8 @@ public class DemoApplicationTests {
 
 	@Test
 	public void exampleTest() throws Exception {
-		this.mvc.perform(get("/user")).andExpect(status().isOk())
-				.andExpect(content().string("Hello World"));
+		this.mvc.perform(get("/api/test")).andExpect(status().isOk())
+				.andExpect(content().string("This is api test"));
 	}
 
 }
